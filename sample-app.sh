@@ -11,7 +11,7 @@ echo "COPY  assessment_code.py /home/myapp/" >> tempdir/Dockerfile
 echo "COPY  network_equipment.json /home/myapp/" >> tempdir/Dockerfile
 echo "RUN python3 /home/myapp/assessment_code.py" >> tempdir/Dockerfile
 echo "EXPOSE 5050" >> tempdir/Dockerfile
-echo "CMD python3 /home/myapp/assessment_code.py" >> tempdir/Dockerfile
+#echo "CMD python3 /home/myapp/assessment_code.py" >> tempdir/Dockerfile
 
 cd tempdir
 docker build -t assessmentcodeimage .
